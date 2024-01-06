@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+</head>
+
+<header>
+  <h1>회원가입</h1>
+</header>
+
+<body>
+
+<p>원활한 서비스를 위해 회원가입을 해주세요</p>
+
+<form>
+  <label for="username">아이디:</label>
+  <input type="text" id="username" name="username" required><br>
+
+  <label for="email">이메일:</label>
+  <input type="email" id="email" name="email" required><br>
+
+  <label for="password">비밀번호:</label>
+  <input type="password" id="password" name="password" required><br>
+
+  <label for="nickname">닉네임:</label>
+  <input type="text" id="nickname" name="nickname" required><br>
+
+    <fieldset>
+      <legend>성별</legend>
+      <ul>
+        <li>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">남성</label>
+        </li>
+        <li>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">여성</label>
+        </li>
+        <li>
+          <input type="radio" id="not_specified" name="gender" value="not_specified">
+          <label for="not_specified">선택 안함</label><br>
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>사용 기술</legend>
+      <ul>
+        <li>
+          <input type="checkbox" id="html" name="skills[]" value="HTML">
+          <label for="html">HTML</label>
+        </li>
+        <li>
+          <input type="checkbox" id="css" name="skills[]" value="CSS">
+          <label for="css">CSS</label>
+        </li>
+        <li>
+          <input type="checkbox" id="javascript" name="skills[]" value="JavaScript">
+          <label for="javascript">JavaScript</label>
+        </li>
+        <li>
+          <input type="checkbox" id="python" name="skills[]" value="Python">
+          <label for="python">Python</label>
+        </li>
+        <li>
+          <input type="checkbox" id="django" name="skills[]" value="Django">
+          <label for="django">Django</label>
+        </li>
+        <li>
+          <input type="checkbox" id="github" name="skills[]" value="GitHub">
+          <label for="github">GitHub</label>
+        </li>
+        <li>
+          <input type="checkbox" id="postgresql" name="skills[]" value="PostgreSQL">
+          <label for="postgresql">PostgreSQL</label>
+        </li>
+      </ul>
+    </fieldset>
+  <input type="submit" value="회원가입">
+</form>
+
+</body>
+</html>
