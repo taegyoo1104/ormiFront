@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>White Box with Border</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    .white-box {
+      width: 400px;
+      height: 200px;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .inner-box {
+      width: 350px;
+      height: 140px;
+      border: 1px solid #DBDBDB;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .inner-text {
+      font-size: 12px;
+      color: #000;
+      position: absolute;
+      top: 19px;
+      left: 16px;
+    }
+    .login-button {
+      position: absolute;
+      top: 50px;
+      left: 16px;
+      width: 318px;
+      height: 40px;
+      background-color: #711BFF;
+      color: #fff;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+    }
+    .login-button img {
+      width: 64px;
+      height: 18px;
+    }
+    .additional-content {
+      position: absolute;
+      top: 106px;
+      left: 16px;
+      display: flex;
+      align-items: center;
+    }
+
+    .icon {
+      width: 16px;
+      height: 16px;
+      margin-right: 5px;
+    }
+    .link-text {
+      text-decoration: none;
+      font-size: 12px;
+      color: #767676;
+    }
+    .separator {
+      font-size: 12px;
+      margin: 0 5px;
+      color: #767676;
+    }
+    .signup-content {
+      position: absolute;
+      top: 106px;
+      left: 269px;
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      color: #767676;
+    }
+
+    .signup-icon {
+      width: 16px;
+      height: 16px;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+<div class="white-box">
+  <div class="inner-box">
+    <div class="inner-text">더 편리해진 위니브에 오신것을 환영합니다.</div>
+    <button class="login-button">
+      <img src="weniv-logo.png" alt="Login Image">
+      로그인
+    </button>
+    <div class="additional-content">
+      <img class="icon" src="icon-lock.png" alt="Icon Image">
+      <a href="#" class="link-text">아이디 찾기</a>
+      <span class="separator">|</span>
+      <a href="#" class="link-text">비밀번호 찾기</a>
+    </div>
+
+    <div class="signup-content">
+      <img class="signup-icon" src="icon-user.png" alt="Signup Icon">
+      <a href="#" class="link-text">회원가입</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
