@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#heading {
+    width: 1920px;
+    height: 902px;
+    position: relative;
+    background-color: #F2E9D8;
+}
+
+#top-navigation-bar {
+    width: 1920px;
+    height: 102px;
+    position: absolute;
+    top: 31px;
+    left: 0;
+}
+
+#logo {
+    width: 130px;
+    height: 40px;
+    position: absolute;
+    top: 31px;
+    left: 320px;
+}
+
+#top_nav_element {
+    width: 205px;
+    height: 20px;
+    position: absolute;
+    top: 41px;
+    left: 1206px;
+    display: flex;
+    justify-content: space-between; /* 아이템들의 "사이(between)"에 균일한 간격을 만들어준다. */
+}
+
+.top_nav_link {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: 'Pretendard', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+#download_btn {
+    width: 140px;
+    height: 50px;
+    position: absolute;
+    top: 26px;
+    left: 1460px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
