@@ -227,9 +227,9 @@ body {
     left: 320px;
 }
 #map {
+    position: absolute;
     width: 1278px;
     height: 520px;
-    position: relative;
     top: 3118px;
     left: 320px;
 }

@@ -72,9 +72,17 @@
     <div class="map-main-text">Where you’ll be</div>
     <div class="map-address-text">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</div>
 
-    <div id="map"></div>
+    <div id="map" style="position: absolute; top: 3118px"></div>
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=927c2d760eca19fa4ada04e224add081"></script>
-    <script src="js/map.js"></script>
+    <script>
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+            mapOption = {
+                center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+                level: 3 // 지도의 확대 레벨
+            };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+    </script>
 </div>
 <div class="subscribe">
     <img class="sub-text" src="img/Sub-text-Group.png">
@@ -85,7 +93,7 @@
 </div>
 <div id="myModal" class="modal">
     <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
+        <span class="close" onclick="closeModal()"></span>
 
         <div class="modal-image" style="background-image: url('img/modal_back.png');">
             <img src="img/modal_cat.png" alt="Cat Image" width="110" height="112">
