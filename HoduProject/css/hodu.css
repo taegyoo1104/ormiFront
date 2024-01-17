@@ -3,15 +3,20 @@ body {
     padding: 0;
 }
 
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 #top-background {
-    width: 1920px;
     height: 902px;
     position: relative;
     background-color: #F2E9D8;
 }
 
 #top-navigation-bar {
-    width: 1920px;
     height: 102px;
     position: absolute;
     top: 31px;
@@ -142,4 +147,147 @@ body {
     line-height: 20px;
     text-align: center;
 }
+ul {
+    list-style-type: none;
+}
 
+#imageList {
+    position: absolute;
+    top: 1800px;
+    left: 320px;
+    display: flex;
+    gap: 72px;
+}
+
+.image-list-item {
+    width: 378px;
+    height: 378px;
+}
+
+#imageList img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; /* 이미지에 둥근 경계를 추가할 수 있습니다. */
+}
+
+#imageList2 {
+    position: absolute;
+    top: 2250px;
+    left: 320px;
+    display: flex;
+    gap: 72px;
+}
+
+#imageList2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; /* 이미지에 둥근 경계를 추가할 수 있습니다. */
+}
+.image-list {
+    display: flex;
+    gap: 72px;
+    position: absolute;
+    top: 1800px; /* 초기 리스트 위치 */
+    left: 320px;
+}
+
+.image-list-item {
+    width: 378px;
+    height: 378px;
+}
+
+.image-list-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#frame {
+    position: absolute;
+    top: 2728px;
+    left: 815px;
+    padding: 20px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#frame-text {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+    margin-bottom: 20px; /* 버튼과의 간격을 설정합니다. */
+}
+
+#learn_more_btn {
+    width: 143px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+#line {
+    position: absolute;
+    top: 2916px;
+    left: 320px;
+}
+
+.map-main-text {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 30px;
+    position: absolute;
+    top: 2985px;
+    left: 320px;
+}
+.map-address-text {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    position: absolute;
+    top: 3050px;
+    left: 320px;
+}
+#map {
+    width: 1278px;
+    height: 520px;
+    position: absolute;
+    top: 3118px;
+    left: 320px;
+}
+
+#cat {
+    position: absolute;
+    top: 3819px;
+}
+
+.footer {
+    position: absolute;
+    top: 4159px;
+    height: 160px;
+    width: 1920px;
+}
+
+.footer #footer-logo {
+    position: absolute;
+    width: 226px;
+    height: 70px;
+    margin-left: 320px;
+    margin-top: 30px;
+}
+
+.footer #footer-icon-group {
+    position: absolute;
+    width: 228px;
+    height: 42px;
+    margin-left: 1372px;
+    margin-top: 50px;
+
+}
