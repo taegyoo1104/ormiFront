@@ -68,9 +68,8 @@
 <div class="infinite"></div>
 <div id="frame" class="frame">
     <div id="frame-text">Continue exploring HODU</div>
-    <button class="learn_more_btn" id="load-more-btn" type="button" onclick="fetchImages()">
-        <img id="learn_more_btn" src="img/Learn_More_btn.png" alt="show_more">
-    </button>
+    <img id="learn_more_btn" class="learn_more_btn" src="img/Learn_More_btn.png" alt="show_more" onclick="fetchImages()">
+
 </div>
 
 <div class="map_container">
@@ -112,15 +111,14 @@
             <img src="img/modal_cat.png" alt="Cat Image" width="110" height="112">
             <img src="img/modal_ty.png" alt="Ty Image">
             <img src="img/modal_text.png" alt="Text Image">
-            <button type="button">
-                <img src="img/modal_close_btn.png" alt="Button Image" onclick="closeModal()">
-            </button>
+            <img src="img/modal_close_btn.png" alt="Button Image" onclick="closeModal()">
         </div>
     </div>
 </div>
 
 <div class="footer">
     <img class="footer_cat" src="img/cat.png">
+    <img class="scroll-top-btn " src="img/scroll-top-btn.png" onclick="window.scrollTo(0,0);">
     <div class="footer_links">
         <img class="footer-logo" src="img/Logo-fin.png">
         <img class="footer-icon-group" src="img/footer-icon-group.png">

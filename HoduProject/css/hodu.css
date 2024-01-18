@@ -333,3 +333,12 @@ body {
     top: 58px;
     left: 1372px;
 }
+
+.scroll-top-btn {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: -10px;
+    left: -400px;
+    cursor: pointer;
+}
