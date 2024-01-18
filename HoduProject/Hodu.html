@@ -3,49 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/hodu2.css">
+    <link rel="stylesheet" href="css/hodu.css">
     <title>KAWAI HODU</title>
 </head>
 <body>
-
-<div id="top-background">
-    <div id="top-navigation-bar">
-        <!-- top-navigation-bar-->
-        <div id="top_nav_element">
-            <a href="#" class="top_nav_link">Home</a>
-            <a href="#" class="top_nav_link" style="margin-left: 30px;">About</a>
-            <a href="#" class="top_nav_link" style="margin-left: 30px;">Support</a>
-        </div>
-        <button class="download_btn" type="button">
-            <img id="download_btn_1" src="img/Download_btn.jpg" alt="download">
-        </button>
-    </div>
-    <img id="logo" src="img/Logo-fin.png" alt="Logo">
-    <div id="main_text">Lorem Ipsum is simply<br>dummy text of the printing and</div>
-    <div id="sub_text">
-        Lorem Ipsum is simply dummy text of the printing and<br>
-        typesetting industry.<br>
-        Lorem Ipsum has been the industry's standard dummy text<br>
-        ever since the 1500s, when an unknown
+<div class="container">
+    <div class="background"></div>
+    <img class="logo" src="img/Logo-fin.png">
+    <div class="nav-links">
+        <p class="nav-link">Home</p>
+        <p class="nav-link">About</p>
+        <p class="nav-link">Support</p>
     </div>
     <button class="download_btn" type="button">
-        <img id="download_btn_2" src="img/Download_btn.jpg" alt="download">
+        <img id="download_btn_1" src="img/Download_btn.jpg" alt="download">
     </button>
-    <img id="cat_in_the_box" src="img/img_cat_png.png" alt="Cat_in_the_box">
+
+    <p class="title-section">
+        <span>Lorem Ipsum is simply</span><br/>
+        <span>dummy text of the printing and</span>
+    </p>
+    <p class="text-section">
+        <span>Lorem Ipsum is simply dummy text of the printing and</span><br />
+        <span>typesetting industry. </span><br />
+        <span>Lorem Ipsum has been the industry's standard dummy text</span><br />
+        <span>ever since the 1500s, when an unknown</span>
+    </p>
+    <button class="download_btn2" type="button">
+        <img class="download_btn_2" src="img/Download_btn.jpg" alt="download">
+    </button>
+    <div class="cat-image-container">
+        <img class="cat-image" src="img/img_cat_png.png" alt="Cat Image">
+    </div>
 </div>
 
-<img id="cat_on_the_bed" src="img/cat_on_the_bed.png" alt="Cat_on_the_bed">
-<div id="mid_text_1">Lorem Ipsum is simply<br>
-    dummy text of the printing<br>
-    and dummy text</div>
-<div id="mid_text_2">Lorem Ipsum is simply dummy text of the printing<br>
-    and typesetting industry.</div>
-<div class="image-list-area">
+<div class="container2">
+    <img id="cat_on_the_bed" src="img/cat_on_the_bed.png" alt="Cat_on_the_bed">
+    <div id="mid_text_1">Lorem Ipsum is simply<br>
+        dummy text of the printing<br>
+        and dummy text</div>
+    <div id="mid_text_2">Lorem Ipsum is simply dummy text of the printing<br>
+        and typesetting industry.</div>
+
     <div id="customText2">dummy text of the printing and dummy</div>
     <div id="customText3">Lorem Ipsum is simply <span style="color: #D97652">dummy text</span> of the printing and typesetting industry.<br>
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</div>
 
-    <div id="imageList">
+</div>
+
+<div class="image_list">
+    <div class="images">
         <div>
             <img class="imageItem" src="img/img_1.png" alt="Image 1">
             <img class="imageItem" src="img/img_2.png" alt="Image 2">
@@ -56,34 +63,41 @@
             <img class="imageItem" src="img/img_5.png" alt="Image 5">
             <img class="imageItem" src="img/img_6.png" alt="Image 6">
         </div>
-        <div id="infinite"></div>
     </div>
-    <div id="frame">
-        <div id="frame-text">Continue exploring HODU</div>
-        <button class="learn_more_btn" id="load-more-btn" type="button" onclick="fetchImages()">
-            <img id="learn_more_btn" src="img/Learn_More_btn.png" alt="show_more">
-        </button>
-    </div>
-    <script src="js/hodu.js"></script>
-    <img id="line" src="img/Rectangle_4.png">
+</div>
+<div class="infinite"></div>
+<div id="frame" class="frame">
+    <div id="frame-text">Continue exploring HODU</div>
+    <button class="learn_more_btn" id="load-more-btn" type="button" onclick="fetchImages()">
+        <img id="learn_more_btn" src="img/Learn_More_btn.png" alt="show_more">
+    </button>
 </div>
 
-<div class="map">
-    <div class="map-main-text">Where you’ll be</div>
-    <div class="map-address-text">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</div>
+<div class="map_container">
+    <div class="map_content">
+        <div class="line">
+            <img src="img/Rectangle_4.png">
+        </div>
+        <div class="map-main-text">Where you’ll be</div>
 
-    <div id="map" style="position: absolute; top: 3118px"></div>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=927c2d760eca19fa4ada04e224add081"></script>
-    <script>
-        var mapContainer = document.getElementById('map'), // 지도를 표시할 div
-            mapOption = {
-                center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
-                level: 3 // 지도의 확대 레벨
-            };
+        <div class="map-address-text">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</div>
 
-        var map = new kakao.maps.Map(mapContainer, mapOption);
-    </script>
+        <div id="map_content">
+            <div class="map" style="position: relative; top: 30px; width: 1278px; height: 550px"></div>
+            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=927c2d760eca19fa4ada04e224add081"></script>
+            <script>
+                var mapContainer = document.getElementById('map_content'), // 지도를 표시할 div
+                    mapOption = {
+                        center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+                        level: 3 // 지도의 확대 레벨
+                    };
+
+                var map = new kakao.maps.Map(mapContainer, mapOption);
+            </script>
+        </div>
+    </div>
 </div>
+
 <div class="subscribe">
     <img class="sub-text" src="img/Sub-text-Group.png">
     <input class="email" type="text">
@@ -94,7 +108,6 @@
 <div id="myModal" class="modal">
     <div class="modal-content">
         <span class="close" onclick="closeModal()"></span>
-
         <div class="modal-image" style="background-image: url('img/modal_back.png');">
             <img src="img/modal_cat.png" alt="Cat Image" width="110" height="112">
             <img src="img/modal_ty.png" alt="Ty Image">
@@ -106,13 +119,14 @@
     </div>
 </div>
 
-<script src="js/hodu.js"></script>
-<img id="cat" src="img/cat.png">
-
 <div class="footer">
-    <img id="footer-logo" src="img/Logo-fin.png">
-    <img id="footer-icon-group" src="img/footer-icon-group.png">
-</div>
+    <img class="footer_cat" src="img/cat.png">
+    <div class="footer_links">
+        <img class="footer-logo" src="img/Logo-fin.png">
+        <img class="footer-icon-group" src="img/footer-icon-group.png">
+    </div>
 
+</div>
+<script src="js/hodu.js"></script>
 </body>
 </html>

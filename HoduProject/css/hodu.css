@@ -1,48 +1,49 @@
 body {
     margin: 0;
     padding: 0;
+
 }
 
-
-#top-background {
+.container {
+    width: 1920px;
     height: 902px;
     position: relative;
-    background-color: #F2E9D8;
+    overflow: hidden;
 }
 
-#top-navigation-bar {
-    height: 102px;
+.container2 {
+    display: flex;
+    width: 1920px;
+    height: 800px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.background {
+    width: 1920px;
+    height: 900px;
     position: absolute;
-    top: 31px;
-    left: 0;
+    left: -1px;
+    top: 1px;
+    background: #f2e9d8;
 }
 
-
-#logo {
+.logo {
     width: 130px;
     height: 40px;
     position: absolute;
-    top: 31px;
     left: 320px;
+    top: 31px;
 }
 
-#top_nav_element {
-    width: 205px;
-    height: 20px;
-    position: absolute;
-    top: 41px;
-    left: 1206px;
+.nav-links {
     display: flex;
-    justify-content: space-between; /* 아이템들의 "사이(between)"에 균일한 간격을 만들어준다. */
-}
-
-.top_nav_link {
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
-    font-family: 'Pretendard', sans-serif;
-    text-decoration: none;
-    color: black;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    left: 1206px;
+    top: 30px;
+    gap: 30px;
 }
 
 #download_btn_1 {
@@ -55,7 +56,26 @@ body {
     cursor: pointer;
 }
 
-#download_btn_2 {
+.title-section {
+    position: absolute;
+    left: 320px;
+    top: 304px;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: left;
+    color: #000;
+}
+
+.text-section {
+    position: absolute;
+    left: 320px;
+    top: 464px;
+    font-size: 16px;
+    text-align: left;
+    color: #000;
+}
+
+.download_btn_2 {
     width: 140px;
     height: 50px;
     position: absolute;
@@ -65,32 +85,23 @@ body {
     cursor: pointer;
 }
 
-#main_text {
-    position: absolute;
-    top: 304px;
-    left: 320px;
-    font-family: 'Pretendard', sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 60px;
-}
-
-#sub_text {
-    position: absolute;
-    top: 464px;
-    left: 320px;
-    font-family: 'Pretendard', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-}
-
-#cat_in_the_box {
+.cat-image-container {
     width: 415px;
     height: 766px;
     position: absolute;
-    top: 136px;
     left: 1185px;
+    top: 136px;
+    overflow: hidden;
+}
+
+.cat-image {
+    width: 415px;
+    height: 766px;
+}
+
+#cat-on-the-bed {
+    width: 660px;
+    height: 390px;
 }
 
 #cat_on_the_bed {
@@ -142,42 +153,38 @@ body {
     line-height: 20px;
     text-align: center;
 }
-#imageList {
-    position: absolute;
-    top: 1800px;
-    left: 320px;
+
+.image_list {
     display: flex;
-    width: 1278px;
-    height: 320px;
-    flex-wrap: wrap;
     justify-content: center;
-
+    align-items: center;
+    width: 1920px;
+    height: 800px;
 }
-
 .imageItem {
     width: 378px;
     height: 378px;
     object-fit: cover;
 }
-
-#infinite {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 72px;
-    justify-content: center;
+.infinite {
+    /*display: none;*/
+    position: relative;
+    top: 72px;
+    width: 1400px;
+    list-style-type: none;
+    text-align: center;
+    float: left;
+    left: 300px;
 }
-#infinite img {
+.infinite img{
     width: 378px;
     height: 378px;
-    gap: 72px;
-    object-fit: cover;
+    margin-left: 32px;
+    margin-right: 32px;
 }
-
-#frame {
-    position: absolute;
-    top: 2728px;
-    left: 815px;
-    padding: 20px;
+.frame {
+    position: relative;
+    top: 30px;
     background-color: transparent;
     border: none;
     display: flex;
@@ -202,72 +209,49 @@ body {
     cursor: pointer;
 }
 
-#line {
-    position: absolute;
-    top: 2916px;
-    left: 320px;
+.map_container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 150px;
+    width: 1920px;
+    height: 1000px;
+}
+
+.map_content {
+    width: 1278px;
+    height: 660px;
+}
+.line {
+    position: relative;
+}
+
+.line img {
+    align-items: center;
 }
 
 .map-main-text {
-    font-family: 'Pretendard', sans-serif;
     font-size: 36px;
     font-weight: 700;
     line-height: 30px;
-    position: absolute;
-    top: 2985px;
-    left: 320px;
 }
+
 .map-address-text {
-    font-family: 'Pretendard', sans-serif;
+    position: relative;
+    top: 20px;
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
-    position: absolute;
-    top: 3050px;
-    left: 320px;
 }
-#map {
-    position: absolute;
-    width: 1278px;
-    height: 520px;
-    top: 3118px;
-    left: 320px;
-}
-
-#cat {
-    z-index: 1;
-    position: absolute;
-    top: 3819px;
-}
-
-.footer {
-    position: absolute;
-    top: 4159px;
-    height: 160px;
-    width: 1920px;
-}
-
-.footer #footer-logo {
-    position: absolute;
-    width: 226px;
-    height: 70px;
-    margin-left: 320px;
-    margin-top: 30px;
-}
-
-.footer #footer-icon-group {
-    position: absolute;
-    width: 228px;
-    height: 42px;
-    margin-left: 1372px;
-    margin-top: 50px;
-
+#map_content {
+    position: relative;
+    top: 30px;
 }
 
 .subscribe {
     z-index: 2;
-    position: absolute;
-    top: 3750px;
+    position: relative;
+    top: 100px;
     height: 200px;
     width: 1280px;
     left: 320px;
@@ -275,12 +259,12 @@ body {
     border-radius: 30px;
     alignment: center;
 }
-.subscribe .sub-text{
+.sub-text{
     position: relative;
     top: 51px;
     left: 58px;
 }
-.subscribe .email{
+.email{
     position: absolute;
     top: 70px;
     left: 692px;
@@ -288,7 +272,7 @@ body {
     height: 60px;
     border-radius: 60px;
 }
-.subscribe .sub-btn {
+.sub-btn {
     position: absolute;
     top: 75px;
     left: 1081px;
@@ -296,6 +280,7 @@ body {
     height: 50px;
     cursor: pointer;
 }
+
 .modal {
     display: none;
     position: fixed;
@@ -328,4 +313,23 @@ body {
 
 .modal-image img {
     margin: 10px;
+}
+.footer {
+    position: relative;
+    height: 500px;
+    margin-bottom: 0;
+}
+.footer_cat {
+    width: 1920px;
+    height: 340px;
+}
+.footer-logo {
+    position: relative;
+    top: 45px;
+    left: 320px;
+}
+.footer-icon-group {
+    position: relative;
+    top: 58px;
+    left: 1372px;
 }
