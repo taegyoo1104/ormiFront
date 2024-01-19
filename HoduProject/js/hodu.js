@@ -3,7 +3,7 @@ const frame = document.getElementById('frame');
 const imageList = document.querySelector(".infinite");
 let pageToFetch = 1;
 let totalImagesFetched = 0;
-const maxImages = 50;
+const maxImages = 60;
 
 async function fetchImages(pageNum){
     try {
@@ -12,7 +12,7 @@ async function fetchImages(pageNum){
             return;
         }
 
-        const response = await fetch('https://picsum.photos/v2/list?page='+pageNum+'&limit=20');
+        const response = await fetch('https://picsum.photos/v2/list?page='+pageNum+'&limit=10');
         if (!response.ok) {
             throw new Error('네트워크 응답에 문제가 있습니다.');
         }
