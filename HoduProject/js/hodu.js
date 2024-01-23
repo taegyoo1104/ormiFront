@@ -1,3 +1,4 @@
+
 const loadImagesButton = document.getElementById("learn_more_btn");
 const frame = document.getElementById('frame');
 const imageList = document.querySelector(".infinite");
@@ -5,6 +6,11 @@ let pageToFetch = 1;
 let totalImagesFetched = 0;
 const maxImages = 60;
 
+/**
+ *
+ * @param pageNum picsum api로 부터 가져올 페이지넘버
+ * @returns maxImages를 60으로 설정하고 fetchImages를 통해 이미지를 총 60장 로드했을 경우 무한스크롤 종료
+ */
 async function fetchImages(pageNum){
     try {
         if (totalImagesFetched >= maxImages) {
@@ -27,6 +33,10 @@ async function fetchImages(pageNum){
     }
 }
 
+/**
+ *
+ * @param datas fetchImages()를 통해 로드한 이미지들의 array
+ */
 function makeImageList(datas){
     datas.forEach((item)=>{
         if (totalImagesFetched < maxImages) {
@@ -36,6 +46,9 @@ function makeImageList(datas){
     });
 }
 
+/**
+ * 버튼을 눌렀을 때, 이미지를 불러오는 fetchImages() 함수를 등록 + 윈도우에 무한스크롤 등록
+ */
 loadImagesButton.addEventListener('click', () => {
     frame.style.display = 'none';
     fetchImages(pageToFetch++);
