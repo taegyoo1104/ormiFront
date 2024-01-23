@@ -17,5 +17,12 @@ HTML, CSS, JS 사용
 ![image](https://github.com/taegyoo1104/ormiFront/assets/57342935/616f9878-4a08-4220-861f-4ceff9a4264f)
 
 3. 밑에 'subscribe' 버튼 클릭 시 modal창을 띄우게 함
-
 ![image](https://github.com/taegyoo1104/ormiFront/assets/57342935/a957a0ee-46da-4401-b984-7de7e50ff5a1)
+
+4. kakao api를 통해 지정한 위치의 지도를 로드
+![image](https://github.com/taegyoo1104/ormiFront/assets/57342935/19562dcf-2ede-4d1c-b2b5-28c0307c444e)
+
+![image](https://github.com/taegyoo1104/ormiFront/assets/57342935/ec85b0d6-3686-4e03-85cc-5afc9910b301)
+
+5. git pages 생성
+(https://taegyoo1104.github.io/HoduProject/index.html)
