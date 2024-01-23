@@ -10,7 +10,8 @@ HTML, CSS, JS 사용
 ![image](https://github.com/taegyoo1104/ormiFront/assets/57342935/9bdbf9da-46bc-41a9-a560-1f54dd2b8fd1)
 
 1. 중간에 있는 'show more' 버튼 클릭 시 Piscsum Api를 이용해 사진을 10장씩 불러온다.
+   
 ![image](https://github.com/taegyoo1104/ormiFront/assets/57342935/e4027ba4-39b3-49c4-bbac-604291139677)
 
-2. 그 때 무한스크롤이 생기게 되고 총 60장의 사진을 불러오게되면 무한스크롤 종료
-3. ![image](https://github.com/taegyoo1104/ormiFront/assets/57342935/616f9878-4a08-4220-861f-4ceff9a4264f)
+3. 그 때 무한스크롤이 생기게 되고 총 60장의 사진을 불러오게되면 무한스크롤 종료
+![image](https://github.com/taegyoo1104/ormiFront/assets/57342935/616f9878-4a08-4220-861f-4ceff9a4264f)
